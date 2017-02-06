@@ -1,0 +1,17 @@
+[Relational Context]
+Default Name
+[Binary Relation]
+Default Name
+R1 | R2 | R3 | R4 | R5 | R6 | R7 | R8 | R9 | R10 | 
+In port 1 | In port 2 | mac src 1 | mac src 2 | ip dst 1 | ip dst 2 | ip src 1 | ip src 2 | port src 1 | port src 2 | port dst 1 | vxlan 1 | vxlan 2 | mpls 1 | mpls 2 | mpls 3 | ethertype 1 | ethertype  2 | Ethertype 3 | EtherType 4 |
+1 0 0 1 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 
+0 1 0 1 1 0 0 1 0 1 0 0 0 0 0 0 1 0 0 0 
+0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 
+0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 1 0 0 1 0 
+1 0 0 1 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 
+0 0 1 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 
+0 1 0 0 1 0 0 0 1 0 1 0 1 0 1 0 0 0 1 0 
+1 0 0 1 0 1 0 1 0 0 1 0 0 1 0 1 0 0 1 0 
+0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 1 0 1 0 1 
+0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1
+[END Relational Context]

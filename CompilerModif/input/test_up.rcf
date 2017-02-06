@@ -1,0 +1,9 @@
+[Relational Context]
+Default Name
+[Binary Relation]
+Default Name
+R22 |
+PortDst=117 | PortSrc=114 | IpDst=10.2/16 | IpSrc=192.168.3.2 | EtherType=0x8847 |
+1 1 1 1 1 
+
+[END Relational Context]

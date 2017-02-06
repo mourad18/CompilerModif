@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BIN name="lattice miner fileContext.slf" nbObj="10" nbAtt="20" type="BinaryRelation">
+  <OBJS>
+    <OBJ id="0">1</OBJ>
+    <OBJ id="1">2</OBJ>
+    <OBJ id="2">3</OBJ>
+    <OBJ id="3">4</OBJ>
+    <OBJ id="4">5</OBJ>
+    <OBJ id="5">6</OBJ>
+    <OBJ id="6">7</OBJ>
+    <OBJ id="7">8</OBJ>
+    <OBJ id="8">9</OBJ>
+    <OBJ id="9">10</OBJ>
+  </OBJS>
+  <ATTS>
+    <ATT id="0">in port = 1</ATT>
+    <ATT id="1">in port = 2</ATT>
+    <ATT id="2">mac src = 1::1</ATT>
+    <ATT id="3">mac src = 2::2</ATT>
+    <ATT id="4">ip dest = 1.1.1/24</ATT>
+    <ATT id="5">ip dest = 1.1/16</ATT>
+    <ATT id="6">ip src = 3.3./16</ATT>
+    <ATT id="7">ip src = 2.8.15/24</ATT>
+    <ATT id="8">port src= 8080</ATT>
+    <ATT id="9">port src = 41</ATT>
+    <ATT id="10">port dest = 8080</ATT>
+    <ATT id="11">vxlan = 6600</ATT>
+    <ATT id="12">vxlan= 356</ATT>
+    <ATT id="13">mpls = 16</ATT>
+    <ATT id="14">mpls = 30</ATT>
+    <ATT id="15">mpls = 40</ATT>
+    <ATT id="16">ether type = 0x800</ATT>
+    <ATT id="17">ether type = 0x0806</ATT>
+    <ATT id="18">ether type = 0x8847</ATT>
+    <ATT id="19">ether type = 0x8100</ATT>
+  </ATTS>
+  <RELS>
+    <REL idObj="0" idAtt="17" />
+    <REL idObj="0" idAtt="0" />
+    <REL idObj="0" idAtt="4" />
+    <REL idObj="0" idAtt="3" />
+    <REL idObj="0" idAtt="14" />
+    <REL idObj="0" idAtt="8" />
+    <REL idObj="0" idAtt="11" />
+    <REL idObj="1" idAtt="16" />
+    <REL idObj="1" idAtt="1" />
+    <REL idObj="1" idAtt="4" />
+    <REL idObj="1" idAtt="7" />
+    <REL idObj="1" idAtt="3" />
+    <REL idObj="1" idAtt="9" />
+    <REL idObj="2" idAtt="16" />
+    <REL idObj="2" idAtt="4" />
+    <REL idObj="2" idAtt="6" />
+    <REL idObj="2" idAtt="2" />
+    <REL idObj="2" idAtt="14" />
+    <REL idObj="2" idAtt="10" />
+    <REL idObj="2" idAtt="8" />
+    <REL idObj="2" idAtt="12" />
+    <REL idObj="3" idAtt="18" />
+    <REL idObj="3" idAtt="5" />
+    <REL idObj="3" idAtt="2" />
+    <REL idObj="3" idAtt="13" />
+    <REL idObj="3" idAtt="15" />
+    <REL idObj="3" idAtt="8" />
+    <REL idObj="4" idAtt="17" />
+    <REL idObj="4" idAtt="0" />
+    <REL idObj="4" idAtt="7" />
+    <REL idObj="4" idAtt="3" />
+    <REL idObj="4" idAtt="15" />
+    <REL idObj="4" idAtt="9" />
+    <REL idObj="4" idAtt="12" />
+    <REL idObj="5" idAtt="16" />
+    <REL idObj="5" idAtt="5" />
+    <REL idObj="5" idAtt="6" />
+    <REL idObj="5" idAtt="2" />
+    <REL idObj="5" idAtt="11" />
+    <REL idObj="6" idAtt="18" />
+    <REL idObj="6" idAtt="1" />
+    <REL idObj="6" idAtt="4" />
+    <REL idObj="6" idAtt="14" />
+    <REL idObj="6" idAtt="10" />
+    <REL idObj="6" idAtt="8" />
+    <REL idObj="6" idAtt="12" />
+    <REL idObj="7" idAtt="18" />
+    <REL idObj="7" idAtt="0" />
+    <REL idObj="7" idAtt="5" />
+    <REL idObj="7" idAtt="7" />
+    <REL idObj="7" idAtt="3" />
+    <REL idObj="7" idAtt="13" />
+    <REL idObj="7" idAtt="15" />
+    <REL idObj="7" idAtt="10" />
+    <REL idObj="8" idAtt="17" />
+    <REL idObj="8" idAtt="19" />
+    <REL idObj="8" idAtt="4" />
+    <REL idObj="8" idAtt="6" />
+    <REL idObj="8" idAtt="2" />
+    <REL idObj="8" idAtt="15" />
+    <REL idObj="8" idAtt="9" />
+    <REL idObj="8" idAtt="11" />
+    <REL idObj="9" idAtt="19" />
+    <REL idObj="9" idAtt="1" />
+    <REL idObj="9" idAtt="5" />
+    <REL idObj="9" idAtt="3" />
+    <REL idObj="9" idAtt="12" />
+  </RELS>
+</BIN>
+

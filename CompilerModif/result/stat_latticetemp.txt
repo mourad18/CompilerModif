@@ -1,0 +1,241 @@
+# Database file name:              /root/workspace/OFcompiler/input/test_up10.rcf
+# Database file size:              2,262 bytes
+# Number of lines:                 10
+# Total number of attributes:      52
+# Number of non empty attributes:  44
+# Number of attributes in average: 9.4
+# Density:                         18.08%
+# min_supp:                        1, i.e. 10%
+# Chosen algorithm:                dTouch [dCharm + dTalky-G + association]
+
+# Method for finding order:        Snow
+Top (empty):
+[R1, R2, R3, R4, R5, R6, R7, R8, R9, R10] x {} (10) [id=43, type=top, level=0]
+   parents:    []
+   children:   [{in_DMAC=00:01:00:*}, {VNI=2}, {VLAN_ID=300}, {in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2}, {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2}, {out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2}, {VNI=0}, {in_SIP=10.1/16}]
+   generators: [{}]
+
+[R1, R3, R4] x {in_SIP=10.1/16} (3) [id=11, type=inner, level=1]
+   parents:    [{}]
+   children:   [{out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, VLAN_ID=300, in_DIP=132.208/16, in_SIP=10.1/16}]
+   generators: [{in_SIP=10.1/16}]
+
+[R1, R7, R10] x {VNI=0} (3) [id=30, type=inner, level=1]
+   parents:    [{}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_DMAC=00:01:00:*}, {VNI=0, in_DIP=132.208.13/24}]
+   generators: [{VNI=0}]
+
+[R3, R6, R9] x {VNI=2} (3) [id=31, type=inner, level=1]
+   parents:    [{}]
+   children:   [{VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*}, {VNI=2, VLAN_ID=300}, {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VNI=2}]
+   generators: [{VNI=2}]
+
+[R2, R4, R5, R7, R10] x {in_DMAC=00:01:00:*} (5) [id=39, type=inner, level=1]
+   parents:    [{}]
+   children:   [{in_SMAC=00:02:00:*, in_DMAC=00:01:00:*}, {in_DMAC=00:01:00:*, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*}, {in_DMAC=00:01:00:*, in_DIP=132.208.13/24}]
+   generators: [{in_DMAC=00:01:00:*}]
+
+[R1, R4, R5, R8, R10] x {in_DIP=132.208.13/24} (5) [id=40, type=inner, level=1]
+   parents:    [{}]
+   children:   [{VLAN_ID=200, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DIP=132.208.13/24}, {VNI=0, in_DIP=132.208.13/24}, {in_DMAC=00:01:00:*, in_DIP=132.208.13/24}]
+   generators: [{in_DIP=132.208.13/24}]
+
+[R2, R3, R8, R9, R10] x {VLAN_ID=300} (5) [id=41, type=inner, level=1]
+   parents:    [{}]
+   children:   [{out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VLAN_ID=300}, {VNI=2, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300}, {in_DMAC=00:01:00:*, VLAN_ID=300}]
+   generators: [{VLAN_ID=300}]
+
+[R1, R4, R5] x {VLAN_ID=200, in_DIP=132.208.13/24} (3) [id=17, type=inner, level=2]
+   parents:    [{in_DIP=132.208.13/24}]
+   children:   [{out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}, {in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24}]
+   generators: [{VLAN_ID=200}]
+
+[R1, R4, R6] x {out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2} (3) [id=18, type=inner, level=1]
+   parents:    [{}]
+   children:   [{out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2}]
+   generators: [{out_SIP=192.168.3.2}, {out_SMAC=00:AA:00:64:CD:19}]
+
+[R1, R10] x {VNI=0, in_DIP=132.208.13/24} (2) [id=19, type=inner, level=2]
+   parents:    [{in_DIP=132.208.13/24}, {VNI=0}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:00:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=132.208.13/26}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=0, in_SMAC=00:01:00:*, in_DMAC=00:00:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}]
+   generators: [{VNI=0, in_DIP=132.208.13/24}]
+
+[R3, R9] x {VNI=2, VLAN_ID=300} (2) [id=21, type=inner, level=2]
+   parents:    [{VNI=2}, {VLAN_ID=300}]
+   children:   [{out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.4.2, VNI=2, in_SMAC=00:11:FE:*, in_DMAC=00:11:FF:*, VLAN_ID=300, in_DIP=132.193.123/20, in_SIP=132.208/16}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, VLAN_ID=300, in_DIP=132.208/16, in_SIP=10.1/16}]
+   generators: [{VNI=2, VLAN_ID=300}]
+
+[R2, R10] x {in_DMAC=00:01:00:*, VLAN_ID=300} (2) [id=23, type=inner, level=2]
+   parents:    [{in_DMAC=00:01:00:*}, {VLAN_ID=300}]
+   children:   [{out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.1.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/26, in_SIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:00:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=132.208.13/26}]
+   generators: [{in_DMAC=00:01:00:*, VLAN_ID=300}]
+
+[R2, R5, R7] x {in_SMAC=00:02:00:*, in_DMAC=00:01:00:*} (3) [id=26, type=inner, level=2]
+   parents:    [{in_DMAC=00:01:00:*}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*}, {in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, in_DIP=132.208.13/26, in_SIP=132.208.13/24}]
+   generators: [{in_SMAC=00:02:00:*}]
+
+[R1, R2, R6, R9] x {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2} (4) [id=32, type=inner, level=1]
+   parents:    [{}]
+   children:   [{out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VLAN_ID=300}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2}, {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VNI=2}]
+   generators: [{out_DIP=192.168.2.2}, {out_DMAC=00:AA:00:89:AB:CD}]
+
+[R4, R5, R10] x {in_DMAC=00:01:00:*, in_DIP=132.208.13/24} (3) [id=34, type=inner, level=2]
+   parents:    [{in_DMAC=00:01:00:*}, {in_DIP=132.208.13/24}]
+   children:   [{in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*, in_DIP=132.208.13/24}]
+   generators: [{in_DMAC=00:01:00:*, in_DIP=132.208.13/24}]
+
+[R3, R5, R7, R8, R10] x {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2} (5) [id=42, type=inner, level=1]
+   parents:    [{}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*}]
+   generators: [{out_SIP=192.168.2.2}, {out_SMAC=00:AA:00:89:AB:CD}]
+
+[R3, R6] x {VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*} (2) [id=13, type=inner, level=2]
+   parents:    [{VNI=2}]
+   children:   [{out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, in_DIP=10.1/16, in_SIP=132.193.123/20}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, VLAN_ID=300, in_DIP=132.208/16, in_SIP=10.1/16}]
+   generators: [{in_SMAC=00:11:FF:*}, {in_DMAC=00:11:FE:*}]
+
+[R4, R5] x {in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24} (2) [id=15, type=inner, level=3]
+   parents:    [{VLAN_ID=200, in_DIP=132.208.13/24}, {in_DMAC=00:01:00:*, in_DIP=132.208.13/24}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:23:45:67, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=1, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.2/16}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.4.2, out_SIP=192.168.3.2, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}]
+   generators: [{in_DMAC=00:01:00:*, VLAN_ID=200}]
+
+[R2, R9] x {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VLAN_ID=300} (2) [id=20, type=inner, level=2]
+   parents:    [{VLAN_ID=300}, {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2}]
+   children:   [{out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.1.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/26, in_SIP=132.208.13/24}, {out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.4.2, VNI=2, in_SMAC=00:11:FE:*, in_DMAC=00:11:FF:*, VLAN_ID=300, in_DIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.2.2, VLAN_ID=300}, {out_DMAC=00:AA:00:89:AB:CD, VLAN_ID=300}]
+
+[R6, R9] x {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VNI=2} (2) [id=27, type=inner, level=2]
+   parents:    [{VNI=2}, {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2}]
+   children:   [{out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, in_DIP=10.1/16, in_SIP=132.193.123/20}, {out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.4.2, VNI=2, in_SMAC=00:11:FE:*, in_DMAC=00:11:FF:*, VLAN_ID=300, in_DIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.2.2, VNI=2}, {out_DMAC=00:AA:00:89:AB:CD, VNI=2}]
+
+[R3, R8, R10] x {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300} (3) [id=36, type=inner, level=2]
+   parents:    [{VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300, in_DIP=132.208.13/24}]
+   generators: [{out_SIP=192.168.2.2, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, VLAN_ID=300}]
+
+[R5, R7, R10] x {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*} (3) [id=37, type=inner, level=2]
+   parents:    [{in_DMAC=00:01:00:*}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_DMAC=00:01:00:*}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*}]
+   generators: [{out_SIP=192.168.2.2, in_DMAC=00:01:00:*}, {out_SMAC=00:AA:00:89:AB:CD, in_DMAC=00:01:00:*}]
+
+[R5, R8, R10] x {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DIP=132.208.13/24} (3) [id=38, type=inner, level=2]
+   parents:    [{in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DIP=192.168.1.2, out_SIP=192.168.2.2, in_DIP=132.208.13/24, in_SIP=10.2/16}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*, in_DIP=132.208.13/24}]
+   generators: [{out_SIP=192.168.2.2, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, in_DIP=132.208.13/24}]
+
+[R1, R6] x {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2} (2) [id=9, type=inner, level=2]
+   parents:    [{out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2}, {out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2}]
+   children:   [{out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, in_DIP=10.1/16, in_SIP=132.193.123/20}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=0, in_SMAC=00:01:00:*, in_DMAC=00:00:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}]
+   generators: [{out_DIP=192.168.2.2, out_SIP=192.168.3.2}, {out_SMAC=00:AA:00:64:CD:19, out_DIP=192.168.2.2}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD}, {out_DMAC=00:AA:00:89:AB:CD, out_SIP=192.168.3.2}]
+
+[R2, R7] x {in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, in_DIP=132.208.13/26, in_SIP=132.208.13/24} (2) [id=14, type=inner, level=3]
+   parents:    [{in_SMAC=00:02:00:*, in_DMAC=00:01:00:*}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=400, in_DIP=132.208.13/26, in_SIP=132.208.13/24}, {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.1.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/26, in_SIP=132.208.13/24}]
+   generators: [{in_DIP=132.208.13/26}, {in_SIP=132.208.13/24}]
+
+[R5, R7] x {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*} (2) [id=22, type=inner, level=3]
+   parents:    [{in_SMAC=00:02:00:*, in_DMAC=00:01:00:*}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=400, in_DIP=132.208.13/26, in_SIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:23:45:67, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=1, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.2/16}]
+   generators: [{out_SIP=192.168.2.2, in_SMAC=00:02:00:*}, {out_SMAC=00:AA:00:89:AB:CD, in_SMAC=00:02:00:*}]
+
+[R5, R10] x {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*, in_DIP=132.208.13/24} (2) [id=28, type=inner, level=3]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*}, {in_DMAC=00:01:00:*, in_DIP=132.208.13/24}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:00:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=132.208.13/26}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:23:45:67, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=1, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.2/16}]
+   generators: [{out_SIP=192.168.2.2, in_DMAC=00:01:00:*, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, in_DMAC=00:01:00:*, in_DIP=132.208.13/24}]
+
+[R8, R10] x {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300, in_DIP=132.208.13/24} (2) [id=33, type=inner, level=3]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:00:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=132.208.13/26}, {out_SMAC=00:AA:00:89:AB:CD, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=3, in_SMAC=00:CD:95:*, in_DMAC=00:FE:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=10.2/16}]
+   generators: [{VLAN_ID=300, in_DIP=132.208.13/24}]
+
+[R3, R7, R10] x {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2} (3) [id=35, type=inner, level=2]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_DMAC=00:01:00:*}]
+   generators: [{out_DIP=192.168.3.2}, {out_DMAC=00:AA:00:64:CD:19}]
+
+[R1, R4] x {out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16} (2) [id=6, type=inner, level=3]
+   parents:    [{VLAN_ID=200, in_DIP=132.208.13/24}, {in_SIP=10.1/16}, {out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2}]
+   children:   [{out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.4.2, out_SIP=192.168.3.2, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=0, in_SMAC=00:01:00:*, in_DMAC=00:00:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}]
+   generators: [{out_SIP=192.168.3.2, VLAN_ID=200}, {out_SIP=192.168.3.2, in_DIP=132.208.13/24}, {out_SIP=192.168.3.2, in_SIP=10.1/16}, {out_SMAC=00:AA:00:64:CD:19, VLAN_ID=200}, {out_SMAC=00:AA:00:64:CD:19, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:64:CD:19, in_SIP=10.1/16}, {VLAN_ID=200, in_SIP=10.1/16}, {in_DIP=132.208.13/24, in_SIP=10.1/16}]
+
+[R5, R8] x {out_SMAC=00:AA:00:89:AB:CD, out_DIP=192.168.1.2, out_SIP=192.168.2.2, in_DIP=132.208.13/24, in_SIP=10.2/16} (2) [id=24, type=inner, level=3]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DIP=132.208.13/24}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:23:45:67, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=1, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.2/16}, {out_SMAC=00:AA:00:89:AB:CD, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=3, in_SMAC=00:CD:95:*, in_DMAC=00:FE:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=10.2/16}]
+   generators: [{in_SIP=10.2/16}, {out_DIP=192.168.1.2}]
+
+[R3, R10] x {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VLAN_ID=300} (2) [id=25, type=inner, level=3]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:00:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=132.208.13/26}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, VLAN_ID=300, in_DIP=132.208/16, in_SIP=10.1/16}]
+   generators: [{out_DIP=192.168.3.2, VLAN_ID=300}, {out_DMAC=00:AA:00:64:CD:19, VLAN_ID=300}]
+
+[R7, R10] x {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_DMAC=00:01:00:*} (2) [id=29, type=inner, level=3]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*}, {VNI=0}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=400, in_DIP=132.208.13/26, in_SIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:00:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=132.208.13/26}]
+   generators: [{out_DIP=192.168.3.2, VNI=0}, {out_DIP=192.168.3.2, in_DMAC=00:01:00:*}, {out_SIP=192.168.2.2, VNI=0}, {VNI=0, in_DMAC=00:01:00:*}, {out_SMAC=00:AA:00:89:AB:CD, VNI=0}, {out_DMAC=00:AA:00:64:CD:19, VNI=0}, {out_DMAC=00:AA:00:64:CD:19, in_DMAC=00:01:00:*}]
+
+[R2] x {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.1.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/26, in_SIP=132.208.13/24} (1) [id=2, type=inner, level=4]
+   parents:    [{out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VLAN_ID=300}, {in_DMAC=00:01:00:*, VLAN_ID=300}, {in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, in_DIP=132.208.13/26, in_SIP=132.208.13/24}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.2.2, in_SMAC=00:02:00:*}, {out_DIP=192.168.2.2, in_DMAC=00:01:00:*}, {out_DIP=192.168.2.2, in_DIP=132.208.13/26}, {out_DIP=192.168.2.2, in_SIP=132.208.13/24}, {out_SIP=192.168.1.2}, {in_SMAC=00:02:00:*, VLAN_ID=300}, {VLAN_ID=300, in_DIP=132.208.13/26}, {VLAN_ID=300, in_SIP=132.208.13/24}, {out_DMAC=00:AA:00:89:AB:CD, in_SMAC=00:02:00:*}, {out_DMAC=00:AA:00:89:AB:CD, in_DMAC=00:01:00:*}, {out_DMAC=00:AA:00:89:AB:CD, in_DIP=132.208.13/26}, {out_DMAC=00:AA:00:89:AB:CD, in_SIP=132.208.13/24}]
+
+[R4] x {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.4.2, out_SIP=192.168.3.2, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16} (1) [id=4, type=inner, level=4]
+   parents:    [{out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}, {in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.4.2}, {out_SIP=192.168.3.2, in_DMAC=00:01:00:*}, {out_SMAC=00:AA:00:64:CD:19, in_DMAC=00:01:00:*}, {in_DMAC=00:01:00:*, in_SIP=10.1/16}, {out_DMAC=00:AA:00:EF:C7:9F}]
+
+[R6] x {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, in_DIP=10.1/16, in_SIP=132.193.123/20} (1) [id=7, type=inner, level=3]
+   parents:    [{VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2}, {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VNI=2}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.2.2, in_SMAC=00:11:FF:*}, {out_DIP=192.168.2.2, in_DMAC=00:11:FE:*}, {out_SIP=192.168.3.2, VNI=2}, {out_SIP=192.168.3.2, in_SMAC=00:11:FF:*}, {out_SIP=192.168.3.2, in_DMAC=00:11:FE:*}, {out_SMAC=00:AA:00:64:CD:19, VNI=2}, {out_SMAC=00:AA:00:64:CD:19, in_SMAC=00:11:FF:*}, {out_SMAC=00:AA:00:64:CD:19, in_DMAC=00:11:FE:*}, {in_DIP=10.1/16}, {in_SIP=132.193.123/20}, {out_DMAC=00:AA:00:89:AB:CD, in_SMAC=00:11:FF:*}, {out_DMAC=00:AA:00:89:AB:CD, in_DMAC=00:11:FE:*}]
+
+[R8] x {out_SMAC=00:AA:00:89:AB:CD, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=3, in_SMAC=00:CD:95:*, in_DMAC=00:FE:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=10.2/16} (1) [id=10, type=inner, level=4]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_DIP=192.168.1.2, out_SIP=192.168.2.2, in_DIP=132.208.13/24, in_SIP=10.2/16}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300, in_DIP=132.208.13/24}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{VNI=3}, {in_SMAC=00:CD:95:*}, {in_DMAC=00:FE:00:*}, {VLAN_ID=300, in_SIP=10.2/16}, {out_DIP=192.168.1.2, VLAN_ID=300}]
+
+[R1] x {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=0, in_SMAC=00:01:00:*, in_DMAC=00:00:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16} (1) [id=1, type=inner, level=4]
+   parents:    [{out_SMAC=00:AA:00:64:CD:19, out_SIP=192.168.3.2, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2}, {VNI=0, in_DIP=132.208.13/24}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.2.2, VNI=0}, {out_DIP=192.168.2.2, VLAN_ID=200}, {out_DIP=192.168.2.2, in_DIP=132.208.13/24}, {out_DIP=192.168.2.2, in_SIP=10.1/16}, {out_SIP=192.168.3.2, VNI=0}, {VNI=0, VLAN_ID=200}, {VNI=0, in_SIP=10.1/16}, {in_SMAC=00:01:00:*}, {in_DMAC=00:00:00:*}, {out_SMAC=00:AA:00:64:CD:19, VNI=0}, {out_DMAC=00:AA:00:89:AB:CD, VNI=0}, {out_DMAC=00:AA:00:89:AB:CD, VLAN_ID=200}, {out_DMAC=00:AA:00:89:AB:CD, in_DIP=132.208.13/24}, {out_DMAC=00:AA:00:89:AB:CD, in_SIP=10.1/16}]
+
+[R3] x {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, VLAN_ID=300, in_DIP=132.208/16, in_SIP=10.1/16} (1) [id=3, type=inner, level=4]
+   parents:    [{VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*}, {VNI=2, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VLAN_ID=300}, {in_SIP=10.1/16}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.3.2, VNI=2}, {out_DIP=192.168.3.2, in_SMAC=00:11:FF:*}, {out_DIP=192.168.3.2, in_DMAC=00:11:FE:*}, {out_DIP=192.168.3.2, in_SIP=10.1/16}, {out_SIP=192.168.2.2, VNI=2}, {out_SIP=192.168.2.2, in_SMAC=00:11:FF:*}, {out_SIP=192.168.2.2, in_DMAC=00:11:FE:*}, {out_SIP=192.168.2.2, in_SIP=10.1/16}, {VNI=2, in_SIP=10.1/16}, {out_SMAC=00:AA:00:89:AB:CD, VNI=2}, {out_SMAC=00:AA:00:89:AB:CD, in_SMAC=00:11:FF:*}, {out_SMAC=00:AA:00:89:AB:CD, in_DMAC=00:11:FE:*}, {out_SMAC=00:AA:00:89:AB:CD, in_SIP=10.1/16}, {in_SMAC=00:11:FF:*, VLAN_ID=300}, {in_SMAC=00:11:FF:*, in_SIP=10.1/16}, {in_DMAC=00:11:FE:*, VLAN_ID=300}, {in_DMAC=00:11:FE:*, in_SIP=10.1/16}, {VLAN_ID=300, in_SIP=10.1/16}, {in_DIP=132.208/16}, {out_DMAC=00:AA:00:64:CD:19, VNI=2}, {out_DMAC=00:AA:00:64:CD:19, in_SMAC=00:11:FF:*}, {out_DMAC=00:AA:00:64:CD:19, in_DMAC=00:11:FE:*}, {out_DMAC=00:AA:00:64:CD:19, in_SIP=10.1/16}]
+
+[R5] x {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:23:45:67, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=1, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.2/16} (1) [id=5, type=inner, level=4]
+   parents:    [{in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_DIP=192.168.1.2, out_SIP=192.168.2.2, in_DIP=132.208.13/24, in_SIP=10.2/16}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_SIP=192.168.2.2, VLAN_ID=200}, {VNI=1}, {out_SMAC=00:AA:00:89:AB:CD, VLAN_ID=200}, {in_SMAC=00:02:00:*, VLAN_ID=200}, {in_SMAC=00:02:00:*, in_DIP=132.208.13/24}, {in_SMAC=00:02:00:*, in_SIP=10.2/16}, {in_DMAC=00:01:00:*, in_SIP=10.2/16}, {VLAN_ID=200, in_SIP=10.2/16}, {out_DMAC=00:AA:00:23:45:67}, {out_DIP=192.168.1.2, in_SMAC=00:02:00:*}, {out_DIP=192.168.1.2, in_DMAC=00:01:00:*}, {out_DIP=192.168.1.2, VLAN_ID=200}]
+
+[R7] x {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=400, in_DIP=132.208.13/26, in_SIP=132.208.13/24} (1) [id=8, type=inner, level=4]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_DMAC=00:01:00:*}, {in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, in_DIP=132.208.13/26, in_SIP=132.208.13/24}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.3.2, in_SMAC=00:02:00:*}, {out_DIP=192.168.3.2, in_DIP=132.208.13/26}, {out_DIP=192.168.3.2, in_SIP=132.208.13/24}, {out_SIP=192.168.2.2, in_DIP=132.208.13/26}, {out_SIP=192.168.2.2, in_SIP=132.208.13/24}, {VNI=0, in_SMAC=00:02:00:*}, {VNI=0, in_DIP=132.208.13/26}, {VNI=0, in_SIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, in_DIP=132.208.13/26}, {out_SMAC=00:AA:00:89:AB:CD, in_SIP=132.208.13/24}, {VLAN_ID=400}, {out_DMAC=00:AA:00:64:CD:19, in_SMAC=00:02:00:*}, {out_DMAC=00:AA:00:64:CD:19, in_DIP=132.208.13/26}, {out_DMAC=00:AA:00:64:CD:19, in_SIP=132.208.13/24}]
+
+[R9] x {out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.4.2, VNI=2, in_SMAC=00:11:FE:*, in_DMAC=00:11:FF:*, VLAN_ID=300, in_DIP=132.193.123/20, in_SIP=132.208/16} (1) [id=12, type=inner, level=3]
+   parents:    [{out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VLAN_ID=300}, {VNI=2, VLAN_ID=300}, {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, VNI=2}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.2.2, VNI=2, VLAN_ID=300}, {out_SIP=192.168.4.2}, {in_SMAC=00:11:FE:*}, {in_DMAC=00:11:FF:*}, {in_DIP=132.193.123/20}, {out_SMAC=00:AA:00:EF:C7:9F}, {in_SIP=132.208/16}, {out_DMAC=00:AA:00:89:AB:CD, VNI=2, VLAN_ID=300}]
+
+[R10] x {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:00:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=132.208.13/26} (1) [id=16, type=inner, level=4]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, in_DMAC=00:01:00:*, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_SIP=192.168.2.2, VLAN_ID=300, in_DIP=132.208.13/24}, {in_DMAC=00:01:00:*, VLAN_ID=300}, {VNI=0, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_DMAC=00:01:00:*}]
+   children:   [{out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16}]
+   generators: [{out_DIP=192.168.3.2, in_DMAC=00:01:00:*, VLAN_ID=300}, {out_DIP=192.168.3.2, in_DIP=132.208.13/24}, {out_SIP=192.168.2.2, VNI=0, in_DIP=132.208.13/24}, {out_SIP=192.168.2.2, in_DMAC=00:01:00:*, VLAN_ID=300}, {VNI=0, in_DMAC=00:01:00:*, in_DIP=132.208.13/24}, {VNI=0, VLAN_ID=300}, {out_SMAC=00:AA:00:89:AB:CD, VNI=0, in_DIP=132.208.13/24}, {out_SMAC=00:AA:00:89:AB:CD, in_DMAC=00:01:00:*, VLAN_ID=300}, {in_SMAC=00:00:00:*}, {in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/24}, {in_SIP=132.208.13/26}, {out_DMAC=00:AA:00:64:CD:19, in_DMAC=00:01:00:*, VLAN_ID=300}, {out_DMAC=00:AA:00:64:CD:19, in_DIP=132.208.13/24}]
+
+Bottom (empty):
+[] x {out_SMAC=00:AA:00:89:AB:CD, out_SMAC=00:AA:00:64:CD:19, out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:23:45:67, out_DMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.1.2, out_DIP=192.168.2.2, out_DIP=192.168.3.2, out_DIP=192.168.4.2, out_SIP=192.168.1.2, out_SIP=192.168.2.2, out_SIP=192.168.3.2, out_SIP=192.168.4.2, VNI=0, VNI=1, VNI=2, VNI=3, in_SMAC=00:00:00:*, in_SMAC=00:01:00:*, in_SMAC=00:02:00:*, in_SMAC=00:11:FE:*, in_SMAC=00:11:FF:*, in_SMAC=00:CD:95:*, in_DMAC=00:00:00:*, in_DMAC=00:01:00:*, in_DMAC=00:11:FE:*, in_DMAC=00:11:FF:*, in_DMAC=00:FE:00:*, VLAN_ID=200, VLAN_ID=300, VLAN_ID=400, in_DIP=10.1/16, in_DIP=132.208.13/24, in_DIP=132.208.13/26, in_DIP=132.193.123/20, in_DIP=132.208/16, in_SIP=10.1/16, in_SIP=132.208.13/24, in_SIP=132.208.13/26, in_SIP=10.2/16, in_SIP=132.193.123/20, in_SIP=132.208/16} (0) [id=44, type=bottom, level=5]
+   parents:    [{out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=400, in_DIP=132.208.13/26, in_SIP=132.208.13/24}, {out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.1.2, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/26, in_SIP=132.208.13/24}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, in_DIP=10.1/16, in_SIP=132.193.123/20}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=0, in_SMAC=00:00:00:*, in_DMAC=00:01:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=132.208.13/26}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:23:45:67, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=1, in_SMAC=00:02:00:*, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.2/16}, {out_SMAC=00:AA:00:89:AB:CD, out_DIP=192.168.1.2, out_SIP=192.168.2.2, VNI=3, in_SMAC=00:CD:95:*, in_DMAC=00:FE:00:*, VLAN_ID=300, in_DIP=132.208.13/24, in_SIP=10.2/16}, {out_SMAC=00:AA:00:EF:C7:9F, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.4.2, VNI=2, in_SMAC=00:11:FE:*, in_DMAC=00:11:FF:*, VLAN_ID=300, in_DIP=132.193.123/20, in_SIP=132.208/16}, {out_SMAC=00:AA:00:89:AB:CD, out_DMAC=00:AA:00:64:CD:19, out_DIP=192.168.3.2, out_SIP=192.168.2.2, VNI=2, in_SMAC=00:11:FF:*, in_DMAC=00:11:FE:*, VLAN_ID=300, in_DIP=132.208/16, in_SIP=10.1/16}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:EF:C7:9F, out_DIP=192.168.4.2, out_SIP=192.168.3.2, in_DMAC=00:01:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}, {out_SMAC=00:AA:00:64:CD:19, out_DMAC=00:AA:00:89:AB:CD, out_DIP=192.168.2.2, out_SIP=192.168.3.2, VNI=0, in_SMAC=00:01:00:*, in_DMAC=00:00:00:*, VLAN_ID=200, in_DIP=132.208.13/24, in_SIP=10.1/16}]
+   children:   []
+
+# Number of concepts in the lattice: 42 + 2 (inner nodes + Top (empty) and Bottom (empty)).
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# Getting itemsets from Coron:  0.040 sec.
+# Finding extensions:           0.005 sec.
+# Finding order:                0.008 sec.
+# Calculating level values:     0.001 sec.
+# ======================================== 
+# Summary:                      0.054 sec.
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<

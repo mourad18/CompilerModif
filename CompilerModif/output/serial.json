@@ -1,0 +1,157 @@
+{
+	"chart": {
+		"rootOrientation": "WEST",
+		"container": "#tree-simple",
+		"padding": 0,
+		"connectors": {
+			"type": "curve"
+		},
+		"node": {
+			"HTMLclass": "nodeExample1"
+		}
+	},
+
+	"nodeStructure":{
+		"text":{"name":""},
+		"children":[
+			{
+			"text":{"name":"EtherDst=00:11:FE:*"},
+			"children":[
+				{"text":{"name":"R1,R8"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"PortSrc=120"},
+			"children":[
+				{"text":{"name":"R6,R8"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"PortDst=115"},
+			"children":[
+				{"text":{"name":"R3,R8"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"IpSrc=192.168.4.2"},
+			"children":[
+				{"text":{"name":"R0,R8"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"IpDst=132.208.13/24"},
+			"children":[
+				{"text":{"name":"R8,R9"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"PortSrc=114"},
+			"children":[
+				{"text":{"name":"R3,R4"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherSrc=00:AA:00:23:45:67"},
+			"children":[
+				{"text":{"name":"R3,R5"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherType=0x0842"},
+			"children":[
+				{"text":{"name":"R3,R9"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherDst=00:AB:00:*"},
+			"children":[
+				{"text":{"name":"R0,R3"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherSrc=00:00:00:*"},
+			"children":[
+				{"text":{"name":"R0,R7"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherType=0x0806"},
+			"children":[
+				{"text":{"name":"R0,R2"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"IngressPort=8"},
+			"children":[
+				{"text":{"name":"R0,R1"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"PortSrc=100"},
+			"children":[
+				{"text":{"name":"R0,R9"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"PortDst=111"},
+			"children":[
+				{"text":{"name":"R4,R5"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherDst=00:00:00:*"},
+			"children":[
+				{"text":{"name":"R4,R6"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherType=0x8847"},
+			"children":[
+				{"text":{"name":"R5,R7"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"IpSrc=192.168.1.2"},
+			"children":[
+				{"text":{"name":"R1,R5"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherDst=00:11:FF:*"},
+			"children":[
+				{"text":{"name":"R2,R5"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherSrc=00:AA:00:89:AB:CD"},
+			"children":[
+				{"text":{"name":"R2,R9"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherDst=00:01:00:*"},
+			"children":[
+				{"text":{"name":"R7,R9"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"IpDst=132.208.13/24"},
+			"children":[
+				{"text":{"name":"R2,R6"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"PortDst=104"},
+			"children":[
+				{"text":{"name":"R2,R7"}, "HTMLclass":"rule_subset"}
+			  ]
+			 },
+			{
+			"text":{"name":"EtherType=0x8847"},
+			"children":[
+				{"text":{"name":"R1,R6"}, "HTMLclass":"rule_subset"}
+			  ]
+			 }
+			]
+	}
+}

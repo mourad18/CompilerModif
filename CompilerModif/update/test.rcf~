@@ -1,0 +1,9 @@
+[Relational Context]
+Default Name
+[Binary Relation]
+Default Name
+R11 |
+PortDst=108 | VlanId=999 | IngressVPort=3 | IngressPort=15 |
+1 1 1 1 
+
+[END Relational Context]
